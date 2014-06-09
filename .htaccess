@@ -1,0 +1,40 @@
+RewriteEngine on
+#RewriteBase /stagsource.com/
+#ErrorDocument  404  http://localhost/stagsource.com/page-not-found.html
+
+#ErrorDocument  404  http://clients.rainend.com/stagsource.com/page-not-found.html
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteBase /
+ErrorDocument  404  http://www.stagsource.com/page/PageNotFound 
+
+
+
+RewriteCond %{REQUEST_URI} !^library/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+
+
+
+RewriteRule ^category/(.*)$ category.php?id=$1 [L]
+RewriteRule ^contents/(.*)$ content.php?id=$1 [L]
+
+RewriteRule ^page/PageNotFound$ page.php?id=PageNotFound [L]
+RewriteRule ^page/(.*)$ page.php?id=$1 [L]
+RewriteRule ^vendor/(.*)$ vendor.php?id=$1 [L]
+
+
+RewriteRule ^community/contents/(.*)$ content_community.php?id=$1 [L]
+RewriteRule ^community/(.*)$ community.php?id=$1 [L]
+RewriteRule ^community community.php [L]
+
+RewriteRule ^user/PublicProfile/(.*)$ public_profile.php?id=$1 [L]
+
+RewriteRule ^user/(.*)$ user.php?id=$1 [L]
+
+RewriteRule ^content/search/search_keyword=(.*)$ search.php?from=search&id=$1 [L]
+RewriteRule ^content/search/tag=(.*)$ search.php?from=tag&id=$1 [L]
+
+#RewriteRule ^(.*)\.html$ content.php?id=$1.html [L]

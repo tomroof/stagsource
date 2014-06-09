@@ -1,0 +1,100 @@
+/* GENERAL FEEDBACK STYLING */
+#feedback-container{
+position: relative;
+z-index: 9999;
+
+}
+#feedback{
+    background-color: #7ebffc;
+    width: 180px;
+    height: 100px;
+    padding: 0px;
+
+    display: block;
+    position: fixed;
+
+    border-style: solid;
+    border-width: 1px;
+
+    background-image: url(feedback.png);
+    background-repeat: no-repeat;
+   
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+
+    /* CSS3 properties */
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.95);
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.95);
+}
+
+#feedback:hover{
+    background-color: #3980c2;
+    cursor:pointer;
+    /* CSS3 properties */
+    -moz-box-shadow:0 3px 8px rgba(0, 0, 0, 0.95);
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.95);
+}
+
+/* FEEDBACK BULLET LIST LINKS */
+#feedback ul{
+    list-style: none;
+    margin: 0px;
+    padding:3px;
+}
+
+#feedback a{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#feedback a:hover{
+    text-decoration: underline;
+}
+
+#feedback #bug{
+    background-image: url(bug.png);
+    background-repeat: no-repeat;
+    padding-left:20px;
+    padding-bottom: 5px;
+}
+
+#feedback #suggestion{
+    background-image: url(suggestion.png);
+    background-repeat: no-repeat;
+    padding-left:20px;
+    padding-bottom: 5px;
+}
+
+#feedback #comment{
+    background-image: url(comment.png);
+    background-repeat: no-repeat;
+    padding-left:20px;
+    padding-bottom: 5px;
+}
+
+/* FEEDBACK POSITIONAL FORMATTING CLASSES APPLIED VIA JS */
+.feedback-left{
+    top: 40%;
+    left: -160px;
+    background-position: right;
+}
+
+.feedback-right{
+    top: 40%;
+    right: -160px;
+}
+
+.feedback-body-left{
+    padding-right:23px;
+    padding-left:2px;
+    text-align: right;
+}
+
+.feedback-body-right{
+    padding-left:23px;
+    padding-right:2px;
+}
+
+

@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+/***********************************************************
+
+Global Styles
+
+************************************************************/
+
+p, h1, h2, h3, h4, h5, h6, form, fieldset, div, ul, li {
+
+	border: 0;
+
+	margin: 0;
+
+	padding: 0;
+
+} 
+
+body{
+
+	font-family:Arial, Tahoma, Verdana;
+
+	font-size:12px;
+
+	line-height:18px;
+
+	color:#666666;
+
+	background-color:#ffffff;
+
+	/*width:710px;*/
+
+	margin:0;
+
+	padding:0;
+
+}
+
+table {
+
+	font-family:Arial, Tahoma, Verdana;
+
+	font-size:12px;
+
+	line-height:18px;
+
+	color:#666666;
+
+}
+
+
+
+/*img{background:#efefef; border:#cacaca dashed 1px; padding:10px; margin:10px;}*/
+
+img{border:#e0e1e2 solid 2px; margin:10px;}/* Dont change this */
+
+
+
+ul { list-style-type:none; margin-bottom:10px;}
+
+li {background:url(images/content-arrow.png) no-repeat left top; padding:0 0 0 20px; line-height:16px; margin:4px 0 4px 0;}
+
+ol {margin-left:0px; padding-left:20px;}
+
+ol li { background-image:none; padding:0 0 0 0px; line-height:16px; margin:4px 0 4px 0;}
+
+
+a, a:active, a:visited, a:link{color:#538404; font-family:Arial,Helvetica,sans-serif; font-size:12px; text-decoration:underline; cursor:pointer;}
+
+a:hover{color:#666666; text-decoration:none;}
+
+
+
+a img{border:none;}
+
+
+
+h1{font-family:Arial, Helvetica, sans-serif; font-size:18px; font-weight:normal; margin:0; padding:0; line-height:20px;}
+
+h2{font-family:Arial, Helvetica, sans-serif; font-size:17px; font-weight:normal; margin:0; padding:0; line-height:20px;}
+
+h3{font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:normal; margin:0; padding:0; line-height:20px;}
+
+h4{font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:normal; margin:0; padding:0; line-height:19px;}
+
+h5{font-family:Arial, Helvetica, sans-serif; font-size:14px; font-weight:normal; margin:0; padding:0; line-height:19px;}
+
+h6{font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; margin:0; padding:0;}
+
+
+
+/* for newsletter and blog ******************************* donot change this as email application wont support background image *********************************/
+
+.newsletter ul{margin-left:20px; list-style-type:none; margin-bottom:10px;}
+
+.newsletter li{list-style-type:disc !important; padding:0; line-height:16px; margin:4px 0 4px 0; color:#000000; font-size:13px; background:none !important;}
+
+/* for newsletter and blog ******************************* donot change this as email application wont support background image *********************************/
+
+
+
+/*--------------------Global styles ends------------------------*/
+
+
+
+
+
+
+
+.txt-head-green{
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	color:#265706;
+
+	font-size:14px;
+
+	font-weight:bold;
+
+}
+
+.txt-head-brown{
+
+	font-family:Arial, Helvetica, sans-serif;
+
+	color:#342c29;
+
+	font-size:14px;
+
+	font-weight:bold;
+
+}
+
+.txt-green-small{font-family:Arial, Helvetica, sans-serif; color:#265706; font-size:12px;}
+
+.page-break{clear:both; display:block; height:15px;}
+
+
+
+
+
+
+

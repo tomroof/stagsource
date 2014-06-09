@@ -1,0 +1,182 @@
+[09-May-2014 04:46:08 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on 'rainend.ipagemysql.com' (110) in /home/stagsource/public_html/includes/class.database.php on line 17
+[09-May-2014 04:46:08 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch database in /home/stagsource/public_html/includes/config.php on line 106
+[09-May-2014 04:46:08 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch database in /home/stagsource/public_html/includes/config.php on line 117
+[09-May-2014 04:47:11 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on 'rainend.ipagemysql.com' (110) in /home/stagsource/public_html/includes/class.database.php on line 17
+[09-May-2014 04:47:11 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch database in /home/stagsource/public_html/includes/class.content.php on line 779
+[09-May-2014 04:48:14 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on 'rainend.ipagemysql.com' (110) in /home/stagsource/public_html/includes/class.database.php on line 17
+[09-May-2014 04:48:14 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch database in /home/stagsource/public_html/includes/class.content.php on line 785
+[09-May-2014 04:49:17 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/2003): Can't connect to MySQL server on 'rainend.ipagemysql.com' (110) in /home/stagsource/public_html/includes/class.database.php on line 17
+[13-May-2014 10:12:56 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/stagsource/public_html/includes/class.database.php on line 17
+[13-May-2014 10:12:56 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch database in /home/stagsource/public_html/includes/config.php on line 106
+[13-May-2014 10:12:56 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch database in /home/stagsource/public_html/includes/config.php on line 117
+[13-May-2014 10:12:56 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/stagsource/public_html/includes/class.database.php on line 17
+[13-May-2014 10:12:56 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch database in /home/stagsource/public_html/includes/class.content.php on line 73
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/stagsource/public_html/includes/class.database.php on line 17
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch database in /home/stagsource/public_html/includes/config.php on line 106
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch database in /home/stagsource/public_html/includes/config.php on line 117
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/stagsource/public_html/includes/class.database.php on line 17
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch database in /home/stagsource/public_html/includes/class.category.php on line 1816
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/stagsource/public_html/includes/class.database.php on line 17
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch database in /home/stagsource/public_html/includes/class.category.php on line 1816
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/stagsource/public_html/includes/class.database.php on line 17
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch database in /home/stagsource/public_html/includes/class.category.php on line 1849
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/stagsource/public_html/includes/class.database.php on line 17
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch database in /home/stagsource/public_html/includes/class.content.php on line 786
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/stagsource/public_html/includes/class.database.php on line 17
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch database in /home/stagsource/public_html/includes/class.content.php on line 792
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/stagsource/public_html/includes/class.database.php on line 17
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/stagsource/public_html/includes/class.database.php on line 17
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch database in /home/stagsource/public_html/includes/class.planning.php on line 2528
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/stagsource/public_html/includes/class.database.php on line 17
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch database in /home/stagsource/public_html/includes/class.planning.php on line 2557
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::mysqli(): (HY000/2002): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/stagsource/public_html/includes/class.database.php on line 17
+[13-May-2014 10:12:57 America/Los_Angeles] PHP Warning:  mysqli::query(): Couldn't fetch database in /home/stagsource/public_html/includes/class.location.php on line 206
+[15-May-2014 22:21:25 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: (#803) Cannot query users by their username (naitik)
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[15-May-2014 22:21:32 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: (#803) Cannot query users by their username (naitik)
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[15-May-2014 22:29:47 America/Los_Angeles] CSRF state token does not match one provided.
+[15-May-2014 22:29:53 America/Los_Angeles] CSRF state token does not match one provided.
+[15-May-2014 22:29:53 America/Los_Angeles] CSRF state token does not match one provided.
+[15-May-2014 22:30:21 America/Los_Angeles] CSRF state token does not match one provided.
+[15-May-2014 22:30:30 America/Los_Angeles] CSRF state token does not match one provided.
+[15-May-2014 22:30:30 America/Los_Angeles] CSRF state token does not match one provided.
+[15-May-2014 22:33:25 America/Los_Angeles] PHP Fatal error:  Cannot redeclare class Facebook in /home/stagsource/public_html/library/facebook-sdk/src/facebook.php on line 25
+[15-May-2014 22:33:29 America/Los_Angeles] PHP Fatal error:  Cannot redeclare class Facebook in /home/stagsource/public_html/library/facebook-sdk/src/facebook.php on line 25
+[15-May-2014 22:33:37 America/Los_Angeles] PHP Fatal error:  Cannot redeclare class Facebook in /home/stagsource/public_html/library/facebook-sdk/src/facebook.php on line 25
+[15-May-2014 22:33:39 America/Los_Angeles] PHP Fatal error:  Cannot redeclare class Facebook in /home/stagsource/public_html/library/facebook-sdk/src/facebook.php on line 25
+[15-May-2014 22:34:00 America/Los_Angeles] PHP Fatal error:  Cannot redeclare class Facebook in /home/stagsource/public_html/library/facebook-sdk/src/facebook.php on line 25
+[15-May-2014 22:36:25 America/Los_Angeles] CSRF state token does not match one provided.
+[15-May-2014 23:03:23 America/Los_Angeles] CSRF state token does not match one provided.
+[15-May-2014 23:03:33 America/Los_Angeles] CSRF state token does not match one provided.
+[15-May-2014 23:03:36 America/Los_Angeles] CSRF state token does not match one provided.
+[15-May-2014 23:03:36 America/Los_Angeles] CSRF state token does not match one provided.
+[15-May-2014 23:03:52 America/Los_Angeles] CSRF state token does not match one provided.
+[20-May-2014 07:29:35 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 15:19:15 America/Los_Angeles] PHP Warning:  Illegal string offset 'password' in /home/stagsource/public_html/reset_password.php on line 166
+[20-May-2014 15:19:15 America/Los_Angeles] PHP Warning:  Illegal string offset 'confirm_password' in /home/stagsource/public_html/reset_password.php on line 172
+[20-May-2014 23:32:54 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:32:56 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:32:57 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:33:01 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:33:04 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:33:05 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:33:15 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:33:18 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:33:22 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:34:08 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:34:14 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:34:23 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:34:29 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:34:32 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:36:02 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:36:30 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:37:41 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:37:45 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:39:11 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:39:16 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:39:21 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:39:42 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:40:32 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:41:08 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:41:17 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:41:22 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:41:50 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:41:51 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:41:52 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:41:53 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[20-May-2014 23:44:15 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[21-May-2014 00:55:44 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[21-May-2014 00:55:45 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[21-May-2014 00:55:46 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[21-May-2014 01:43:15 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[21-May-2014 02:16:16 America/Los_Angeles] PHP Fatal error:  Call to undefined method content::get_article_slider_array() in /home/stagsource/public_html/content.php on line 105
+[21-May-2014 02:16:16 America/Los_Angeles] PHP Fatal error:  Call to undefined method content::get_article_slider_array() in /home/stagsource/public_html/content.php on line 105
+[21-May-2014 02:16:16 America/Los_Angeles] PHP Fatal error:  Call to undefined method content::get_article_slider_array() in /home/stagsource/public_html/content.php on line 105
+[21-May-2014 02:16:16 America/Los_Angeles] PHP Fatal error:  Call to undefined method content::get_article_slider_array() in /home/stagsource/public_html/content.php on line 105
+[21-May-2014 02:16:17 America/Los_Angeles] PHP Fatal error:  Call to undefined method content::get_article_slider_array() in /home/stagsource/public_html/content.php on line 105
+[21-May-2014 02:19:25 America/Los_Angeles] PHP Fatal error:  Call to undefined method content::get_article_slider_array() in /home/stagsource/public_html/content.php on line 105
+[21-May-2014 02:19:35 America/Los_Angeles] PHP Fatal error:  Class 'content' not found in /home/stagsource/public_html/content.php on line 13
+[21-May-2014 06:56:53 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[21-May-2014 06:56:57 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[21-May-2014 06:57:00 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[21-May-2014 06:57:01 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[21-May-2014 06:57:09 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[21-May-2014 06:57:11 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[21-May-2014 06:58:47 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[21-May-2014 06:58:54 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[21-May-2014 06:59:31 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[21-May-2014 07:00:22 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[21-May-2014 07:01:06 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[21-May-2014 07:01:11 America/Los_Angeles] PHP Fatal error:  Uncaught OAuthException: An active access token must be used to query information about the current user.
+  thrown in /home/stagsource/public_html/library/facebook-sdk/src/base_facebook.php on line 1340
+[23-May-2014 00:36:29 America/Los_Angeles] PHP Fatal error:  Class 'member' not found in /home/stagsource/public_html/inc_header.php on line 35
+[23-May-2014 00:36:29 America/Los_Angeles] PHP Parse error:  syntax error, unexpected end of file in /home/stagsource/public_html/includes/class.member.php on line 109
+[25-May-2014 23:07:40 America/Los_Angeles] PHP Parse error:  syntax error, unexpected end of file in /home/stagsource/public_html/includes/class.content.php on line 2017
+[25-May-2014 23:13:45 America/Los_Angeles] PHP Parse error:  syntax error, unexpected end of file in /home/stagsource/public_html/includes/class.content.php on line 2103
+[29-May-2014 05:49:03 America/Los_Angeles] PHP Warning:  Creating default object from empty value in /home/stagsource/public_html/includes/class.member.php on line 2085
+[29-May-2014 05:50:38 America/Los_Angeles] PHP Warning:  Creating default object from empty value in /home/stagsource/public_html/includes/class.member.php on line 2088
+[29-May-2014 05:52:25 America/Los_Angeles] PHP Warning:  Creating default object from empty value in /home/stagsource/public_html/includes/class.member.php on line 2088
+[29-May-2014 05:52:30 America/Los_Angeles] PHP Warning:  Creating default object from empty value in /home/stagsource/public_html/includes/class.member.php on line 2088
+[29-May-2014 05:52:33 America/Los_Angeles] PHP Warning:  Creating default object from empty value in /home/stagsource/public_html/includes/class.member.php on line 2088
+[29-May-2014 05:52:43 America/Los_Angeles] PHP Warning:  Creating default object from empty value in /home/stagsource/public_html/includes/class.member.php on line 2088
+[29-May-2014 05:53:08 America/Los_Angeles] PHP Warning:  Creating default object from empty value in /home/stagsource/public_html/includes/class.member.php on line 2088
+[29-May-2014 05:53:41 America/Los_Angeles] PHP Warning:  Creating default object from empty value in /home/stagsource/public_html/includes/class.member.php on line 2087
+[29-May-2014 05:55:37 America/Los_Angeles] PHP Warning:  Creating default object from empty value in /home/stagsource/public_html/includes/class.member.php on line 2089
+[29-May-2014 05:57:49 America/Los_Angeles] PHP Warning:  Creating default object from empty value in /home/stagsource/public_html/includes/class.member.php on line 2089
+[31-May-2014 11:08:30 America/Los_Angeles] CSRF state token does not match one provided.
+[31-May-2014 11:08:30 America/Los_Angeles] CSRF state token does not match one provided.
+[02-Jun-2014 12:24:31 America/Los_Angeles] CSRF state token does not match one provided.
+[02-Jun-2014 19:43:41 UTC] PHP Fatal error:  Class 'functions' not found in /home/stagsource/public_html/profile.php on line 11
+[03-Jun-2014 16:28:51 America/Los_Angeles] CSRF state token does not match one provided.
+[03-Jun-2014 16:28:51 America/Los_Angeles] CSRF state token does not match one provided.
+[05-Jun-2014 09:21:10 America/Los_Angeles] CSRF state token does not match one provided.
+[05-Jun-2014 09:21:10 America/Los_Angeles] CSRF state token does not match one provided.
+[09-Jun-2014 03:46:52 America/Los_Angeles] PHP Warning:  getimagesize(/home/stagsource/public_html/userfiles/content/tie.jpg): failed to open stream: No such file or directory in /home/stagsource/public_html/includes/class.content.php on line 1400

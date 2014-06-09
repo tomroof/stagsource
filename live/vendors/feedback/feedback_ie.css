@@ -1,0 +1,5 @@
+/* hide fieldset bg in IE as it doesnt display correctly */
+fieldset{
+    background: none;
+    margin-top: 20px;
+}

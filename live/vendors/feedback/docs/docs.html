@@ -1,0 +1,826 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>Feedback - Documentation</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- include jQuery -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+        <!-- include fancybox -->
+        <script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.0.js"></script>
+        <link rel="stylesheet" href="../fancybox/jquery.fancybox-1.3.0.css" type="text/css" media="screen" />
+        <!-- include feedback widget -->
+        <link type="text/css" href="../widget/feedback_widget.css" rel="stylesheet" />
+        <script type="text/javascript" src="../widget/jquery.feedback.js"></script>
+        
+        <!-- load syntax highlighter -->
+        <script type="text/javascript" src="syntaxhighlighter/src/shCore.js"></script>
+        <link href="syntaxhighlighter/styles/shCore.css" rel="stylesheet" type="text/css" />
+        <link href="syntaxhighlighter/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="syntaxhighlighter/scripts/shBrushJScript.js"></script>
+        <script type="text/javascript" src="syntaxhighlighter/scripts/shBrushCss.js"></script>
+        <script type="text/javascript" src="syntaxhighlighter/scripts/shBrushPhp.js"></script>
+        <script type="text/javascript" src="syntaxhighlighter/scripts/shBrushXml.js"></script>
+        <script type="text/javascript">
+            
+            $(document).ready(function() {
+
+               var pos = 'right';
+               var speed = 500;
+               $('#feedback-container').feedback({
+                   position: pos,
+                   duration: speed
+               });
+               loadIframe();
+               
+               $('#widget-to-left').click(function(){
+                   pos = 'left';
+                   $('#feedback-container').feedback({
+                       position: pos,
+                       duration: speed
+                   });
+                   loadIframe();
+               });
+               $('#widget-to-right').click(function(){
+                   pos = 'right';
+                   $('#feedback-container').feedback({
+                       position: pos
+                   });
+                   loadIframe();
+               });
+               $('#widget-fast').click(function(){
+                   speed = 200;
+                   $('#feedback-container').feedback({
+                       position: pos,
+                       duration: speed
+                   });
+                   loadIframe();
+               });
+               $('#widget-slow').click(function(){
+                   speed = 2000;
+                   $('#feedback-container').feedback({
+                       position: pos,
+                       duration: speed
+                   });
+                   loadIframe();
+               });
+               $('#widget-normal').click(function(){
+                   speed = 1000;
+                   $('#feedback-container').feedback({
+                       position: pos,
+                       duration: speed
+                   });
+                   loadIframe();
+               });
+
+
+               function loadIframe(){
+                   //fancybox iframe
+                   $(".iframe").fancybox({
+                       'titleShow': false,
+                       'width': '50%',
+                       'height': '70%',
+                       'type': 'iframe'
+                   });
+               }
+
+            });
+
+            SyntaxHighlighter.all()
+        </script>
+        <style>
+            body{
+                font-family: verdana;
+                font-size: 11px;
+                margin: 10px;
+            }
+            h1{
+                font-size: 20px;
+            }
+
+            h2{
+                font-size: 16px;
+            }
+
+            h3{
+                font-size: 12px;
+            }
+
+            table{
+                font-size: 11px;
+                width:100%;
+                border-width: 1px;
+                border-style: solid;
+                border-collapse: collapse;
+            }
+
+            tr td{
+                border-width: 1px;
+                border-style: solid;
+                padding:2px;
+            }
+
+            thead{
+                background-color: #cccccc
+            }
+
+            .filename{
+                font-style: italic;
+            }
+
+            .syntaxhighlighter{
+                font-size: 12px !important;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Introduction</h1>
+        <hr/>
+        <p>Feedback provides easy to use, customisable feedback forms for your website visitors
+            to provide you with their comments, suggestions and bug reports. Feedback comes with a
+            special widget which can easily be inserted on every page of your website to allow your
+            website visitors easy access to your feedback forms.</p>
+        <p>The widget is written in Javascript, but works without Javascript too. The feedback forms
+            are written in PHP and send you an email upon form completion.
+        </p>
+        <h3>Updates</h3>
+        <p>
+            <b>Version 1.1</b><br/><br/>
+            <ul>
+                <li>Visual updates to the widgets and to the forms, check out the demo</li>
+                <li>Includes the referring URL in the feedback email, when the browser supplies it (not all browsers provide it and some anti-spyware software removes it) </li>
+                <li>User agent and IP address included in all feedback submissions</li>
+                <li>Now XHTML 1.0 valid for all the form pages</li>
+                <li>Scrolls back to top on validation errors</li>
+            </ul>
+        </p>
+        <h3>Licence Details</h3>
+        <p>
+        Feedback uses the jQuery javascript library and fancybox, both licensed under the MIT license.
+        Icons are from <a href="http://www.famfamfam.com/lab/icons/silk/">famfamfam</a>.
+        It also uses SyntaxHighlighter, licensed under the Lesser General Public License for the
+        documentation. SyntaxHighligher source code is included, the full LGPL is included in the
+        SyntaxHighlighter folder.
+        </p>
+        <h1>Table of Contents</h1>
+        <hr/>
+            <a href="#demo">Demo</a><br/>
+            <a href="#features">Features</a><br/>
+            <a href="#requirements">Requirements</a><br/>
+            <a href="#quickStart">Quick Start</a><br/>
+            <a href="#fileOverview">Overview of included files</a><br/>
+            <a href="#faq">FAQ</a><br/>
+            <a href="#summary">Summary</a><br/>
+        <h1 id="demo">Demo</h1>
+        <hr/>
+        You should be able to see a demo to the right side of the page. Why don't you try: <br/><br/>
+            <a id="widget-to-left" href="#">Moving the widget to the left of the screen</a><br/>
+            <a id="widget-to-right" href="#">Moving it back to the right of the screen</a><br/>
+            <a id="widget-fast" href="#">Speeding up the animation</a><br/>
+            <a id="widget-slow" href="#">Slowing down the animation</a><br/>
+            <a id="widget-slow" href="#">Back to normal speed</a><br/>
+        <h1 id="features">Features</h1>
+        <hr/>
+        <b>Feedback Widget</b><br/>
+        <ul>
+            <li>Feedback widget can be easily displayed on any page and provides an easy mechanism for
+                your website users to give comments, suggestions and bug reports</li>
+            <li>Opens feedback form in a ‘lightbox’ style popup</li>
+            <li>Works best with Javascript but works without Javascript too</li>
+            <li>Easy to add to your pages</li>
+            <li>Display on left or right of page</li>
+            <li>Customise appearance via CSS</li>
+            <li>Customise Javascript properties via easy to use jQuery plugin architecture</li>
+        </ul>
+        <b>Feedback Forms</b><br/>
+        <ul>
+            <li>Comments form for collecting general feedback from your users</li>
+            <li>Suggestions form specifically for ideas and suggestions</li>
+            <li>Bug report form for errors in numerous (customisable) categories</li>
+            <li>Sends user’s IP address and browser details (user agent)</li>
+            <li>Where javascript is available, submits data in an AJAX fashion</li>
+            <li>Separation of code via templates – easily edit forms using HTML</li>
+            <li>Clean, easy to edit php files</li>
+            <li>Form validation (currently server-side only)</li>
+            <li>Sends you an email upon form completion with form details</li>
+        </ul>
+        <h1 id="requirements">Requirements</h1>
+        <hr/>
+        <ul>
+            <li>IE7 +, Firefox 2 +, Chrome, Opera</li>
+            <li>PHP 5</li>
+            <li>Support for PHP's mail() function on your Web server</li>
+        </ul>
+        <h1 id="quickStart">Quick Start</h1>
+        <hr/>
+        <h2>Installing the files</h2>
+        It's best to upload the entire <span class="filename">feedback</span> folder into the root folder of your
+        website and use absolute file paths. That way you won't experience any 404 errors if you use the
+        feedback widget in any sub directories. Of course you can delete the /docs directory when uploading.
+        <h2>Editing the necessary files</h2>
+        <h3>config.php</h3>
+        Located in the 'includes' folder, <span class="filename">config.php</span> holds the mail values for
+        emailing feedback when submitted. There are 2 lines that you will need to change:
+            <script type="syntaxhighlighter" class="brush: php"><![CDATA[
+                static $mailTo = 'admin@whatever.com';
+                static $mailFrom = 'website@yourdomain.com';
+            ]]></script>
+        You should replace the values in quotes with your own email address details.
+        <a href="#config-vars">See the other available config values that can be changed</a>.
+        <br/><br/>
+        That's all it should take to setup the PHP side if things, if you navigate to feedback.php on the path you
+        uploaded the feedback folder to, you should get a page asking you to select the most appropriate feedback type.
+        Now - setting up the feedback widget on your pages!
+        <h2>Setting up the widget</h2>
+        <h3>Editing jquery.feedback.js</h3>
+        Located in the widget folder, <span class="filename">jquery.feedback.js</span> holds the HTML that
+        gets dynamically inserted into your pages. You will need to change the absolute path of the links,
+        look for these lines:
+            <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+                '<li><a class="iframe" href="http://www.yourwebsite.com/path/to/feedback/feedback.php?action=bug">Report a bug</a></li>' +
+                '<li><a class="iframe" href="http://www.yourwebsite.com/path/to/feedback/feedback.php?action=suggestion">Send an idea</a></li>' +
+                '<li><a class="iframe" href="http://www.yourwebsite.com/path/to/feedback/feedback.php?action=comment">Give us a comment</a></li>' +
+            ]]></script>
+        and change 'http://www.yourwebsite.com/path/to/feedback/' to the path where you uploaded feedback in the first step. Whilst you're here
+        you could also change the actual text that gets hyperlinked if you don't like the default.
+        <h3>Adding the widget to your pages</h3>
+        Now you can add the widget to your pages. Between your 'head' tags in the HTML header you will need to
+        add a few lines of code (hopefully you have a template file otherwise you might have to edit quite
+        a few of your own files if you want the widget to appear on every page). <br/><br/>
+        Firstly, load jQuery which is the Javascript library the widget uses. I recommend you use the Google
+        CDN servers to load jQuery, so add this line:
+            <script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js">&lt;/script>
+            ]]></script>
+        Then load fancybox, which is included and is freely licensed under the MIT license(changing the path as required):
+            <script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+                <script type="text/javascript" src="http://www.yourwebsite.com/path/to/feedback/fancybox/jquery.fancybox-1.3.0.pack.js">&lt;/script>
+                <link rel="stylesheet" href="http://www.yourwebsite.com/path/to/feedback/fancybox/jquery.fancybox-1.3.0.css" type="text/css" media="screen" />
+            ]]></script>
+        Then include the feedback stylesheet and javascript (changing the path as required):
+            <script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+                <link type="text/css" href="http://www.yourwebsite.com/path/to/feedback/widget/feedback_widget.css" rel="stylesheet" />
+                <script type="text/javascript" src="http://www.yourwebsite.com/path/to/feedback/widget/jquery.feedback.js">&lt;/script>
+            ]]></script>
+        After loading all the above files include the following:
+             <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                       $('#feedback-container').feedback();
+                       $(".iframe").fancybox({
+                           'width': '50%',
+                           'height': '70%',
+                           'type': 'iframe'
+                       });
+                    });
+                &lt;/script>
+            ]]></script>
+        This sets up the feedback widget to work off the feedback-container id (see below) and also sets up the fancy box popups that
+        will display the feedback forms.
+        <br/><br/>
+        Finally anywhere between the main body tags of your page(s), but towards the bottom as a general rule, include the following
+        (changing the path/to/feedback):
+             <script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+                <div id="feedback-container">
+                    <a href="http://www.yourwebsite.com/path/to/feedback/feedback.php"><div id="feedback" class="feedback-right"></div></a>
+                </div>
+            ]]></script>
+        The feedback-container div id doesn't need to be called that name, but whatever you do call it, be sure
+        to enter the same name in line 3 of the of the javascript code above. The feedback widget will insert the HTML
+        you modified earlier in <span class="filename">jquery.feedback.js</span> between the feedback-container div tags.
+        This means that website visitors who do not have javascript enable will see the HTML currently displayed on line 2.
+        In this case it still displays the feedback widget (on the right but you could just as easily change it to the left
+        by modifying the class on line 2 to 'feedback-left') and when clicked, goes straight to the feedback main page.
+        <br/><br/>
+        And that's it! As a reference, here is the completed code, which would display the feedback widget in an empty page:
+             <script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+                <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+                <html xmlns="http://www.w3.org/1999/xhtml">
+                    <head>
+                        <title>Example</title>
+                        <!-- include jQuery -->
+                        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js">&lt;/script>
+                        <!-- include fancybox -->
+                        <script type="text/javascript" src="http://www.yourwebsite.com/path/to/feedback/fancybox/jquery.fancybox-1.3.0.pack.js">&lt;/script>
+                        <link rel="stylesheet" href="http://www.yourwebsite.com/path/to/feedback/fancybox/jquery.fancybox-1.3.0.css" type="text/css" media="screen" />
+                        <!-- include feedback widget -->
+                        <link type="text/css" href="http://www.yourwebsite.com/path/to/feedback/widget/feedback_widget.css" rel="stylesheet" />
+                        <script type="text/javascript" src="http://www.yourwebsite.com/path/to/feedback/widget/jquery.feedback.js">&lt;/script>
+                        <script type="text/javascript">
+                            $(document).ready(function() {
+                                $('#feedback-container').feedback();
+                                //fancybox iframe
+                                $(".iframe").fancybox({
+                                    'width': '50%',
+                                    'height': '70%',
+                                    'type': 'iframe'
+                                });
+                            });
+                        &lt;/script>
+                    </head>
+
+                    <body>
+                        <div id="feedback-container">
+                            <a href="http://www.yourwebsite.com/path/to/feedback/feedback.php"><div id="feedback" class="feedback-right"></div></a>
+                        </div>
+                    </body>
+
+                </html>
+            ]]></script>
+        Like I've already mentioned, you need to change the paths to the absolute paths of the feedback directory.
+        <h1 id="fileOverview">Overview of included files</h1>
+        If you're planning on modifying any of the code of the Feedback widget or forms (or even if you're not!)
+        I thought it might be helpful to provide a short description of the functionality of each file so you
+        can get an idea of the project structure and where you should make changes.<br/><br/>
+        <table>
+            <thead>
+            <tr>
+                <td><strong>File</strong></td>
+                <td><strong>Description</strong></td>
+            </tr>
+            </thead>
+            <tr>
+                <td>feedback.php</td>
+                <td>Contains the bulk of the PHP code to handle form submissions. Performs server side
+                validation on posted data and then calls the basicMailer methods to send you the submitted
+                data. If posted data fails validation, or there is no posted data, loads the specific feedback type
+                template file based on the 'action' parameter in the URL. If a blank action parameter is
+                supplied, loads 'main.php' template file, if invalid action parameter is supplied, loads
+                incorrectAction.php template file.</td>
+            </tr>
+            <tr>
+                <td>feedback.css</td>
+                <td>Contains all the CSS styling code for any of the form related pages.</td>
+            </tr>
+            <tr>
+                <td>includes/class.basisCaptcha.php</td>
+                <td>Generates a basic mathematical text only/HTML captcha.</td>
+            </tr>
+            <tr>
+                <td>includes/class.basicMailer.php</td>
+                <td>Contains email sending functions and email body generating function for
+                    fetching form data and putting it in a format ready for sending via email.</td>
+            </tr>
+            <tr>
+                <td>includes/class.util.php</td>
+                <td>Any misc app wide functions. Contains template loading code.</td>
+            </tr>
+            <tr>
+                <td>includes/class.validation.php</td>
+                <td>A few basic validation functions in a static class..</td>
+            </tr>
+             <tr>
+                <td>includes/config.php</td>
+                <td>Contains a static config class to set any app wide variables (e.g mail settings).
+                Also loads all PHP files required to run the feedback app and starts sessions. Generally
+                this file is loaded at the start of every main PHP page.</td>
+            </tr>
+            <tr>
+                <td>includes/templates/bug.php</td>
+                <td>All the HTML for the display of the bug feedback type.</td>
+            </tr>
+            <tr>
+                <td>includes/templates/comment.php</td>
+                <td>All the HTML for the display of the comment feedback type.</td>
+            </tr>
+            <tr>
+                <td>includes/templates/header.php</td>
+                <td>Contains the page markup that will display at the top of every feedback
+                    page (but not the HTML &lt;head&gt; data). Don't remove the 'main' div id tag
+                    or rename it unless you also changed the jQuery references in htmlHeader.php</td>
+            </tr>
+            <tr>
+                <td>includes/templates/htmlFooter.php</td>
+                <td>Contains any HTML you want to display at the bottom of every feedback
+                    page and closes open body and html tags.</td>
+            </tr>
+            <tr>
+                <td>includes/templates/htmlHeader.php</td>
+                <td>Contains all data held in HTML &lt;head&gt; tags. Includes jQuery code
+                    to process form using AJAX when Javascript is available. Change the references
+                to '#main' here if you've changed the main div id in header.php.</td>
+            </tr>
+            <tr>
+                <td>includes/templates/incorrectAction.php</td>
+                <td>Loads when an incorrect action parameter is passed in the URL.</td>
+            </tr>
+            <tr>
+                <td>includes/templates/main.php</td>
+                <td>Loads a basic index page. Will typically be seen only by those who do not
+                    have javascript enabled, when they click the feedback widget.</td>
+            </tr>
+            <tr>
+                <td>includes/templates/success.php</td>
+                <td>This template gets loaded when a form is successfully submitted.</td>
+            </tr>
+            <tr>
+                <td>includes/templates/suggestion.php</td>
+                <td>All the HTML for the display of the suggestion feedback type.</td>
+            </tr>
+            <tr>
+                <td>includes/templates/validationError.php</td>
+                <td>This template gets loaded when any validation errors occur.</td>
+            </tr>
+            <tr>
+                <td>fancybox/</td>
+                <td>Fancybox documentation can be found <a href="http://fancybox.net/api">here</a>.</td>
+            </tr>
+            <tr>
+                <td>widget/feedback.png</td>
+                <td>Image file with transparent background which appears on feedback widget 'tab' section.</td>
+            </tr>
+            <tr>
+                <td>widget/feedback_widget.css</td>
+                <td>All the CSS styling code associated with the feedback widget.</td>
+            </tr>
+            <tr>
+                <td>widget/jquery.feedback.js</td>
+                <td>The plugin file for the feedback widget. Modify the feedback widget's HTML in here for now 
+                (this will be simplified in the future!).</td>
+            </tr>
+
+        </table>
+        <h1 id="faq">FAQ</h1>
+        <hr/>
+        <b><i>How do I add an additional bug report category?</i></b><br/>
+            <blockquote>The bug report categories use the HTML select input. In the <span class="filename">bug.php</span> file, 
+                you can additional options like so:
+                	<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+                            <option value="this-will-appear-in-email-sent-to-you">This will display on the form</option>
+                        ]]></script>
+                These need to be between the <i>select</i> HTML tags.
+            </blockquote>
+        <b><i>How do I modify the feedback widget's HTML?</i></b><br/>
+            <blockquote>The HTML is stored within the feedback plugin file: <span class="filename">jquery.feedback.js</span>.
+                The following can be modified using standard HTML to change the widget HTML:
+                        <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+                                   html = '<div id="feedback">' +
+                                    '<div id="feedback-body">' +
+                                    '<p>We\'d love to get your feedback:</p>' +
+                                    '<ul>' +
+                                    '<li><a class="iframe" href="feedback.php?action=bug">Report a bug</a></li>' +
+                                    '<li><a class="iframe" href="feedback.php?action=suggestion">Send an idea</a></li>' +
+                                    '<li><a class="iframe" href="feedback.php?action=comment">Give us a comment</a></li>' +
+                                    '</ul>' +
+                                    '</div>' +
+                                    '</div>';
+                        ]]></script>
+                The lines you are most likely going to want to edit are 5-7, which are the links to feedback.php. You should
+                make these <b>absolute paths</b> so that the feedback widget will work on any pages you have in sub directories.
+                It's important to remember that you will need to <b>escape any single quotes</b> in this text (e.g. as in line 3).
+                If you're adding additional lines also remember to finish each line with a '+' and to enclose each line of HTML
+                in single quotes.
+            </blockquote>
+        <b><i>How do I modify the feedback widget appearance?</i></b><br/>
+            <blockquote>
+                The <span class="filename">feedback_widget.css</span> file contains all the CSS styling code for the widget.
+                <br/><br/>
+                To modify the colours, in the #feedback id and #feedback:hover you will see:
+                	<script type="syntaxhighlighter" class="brush: css"><![CDATA[
+                            background-color: #454545;
+                        ]]></script>
+                You can change these hex values to any colours. The #feedback:hover colour is only applied when the mouse is
+                over the feedback widget.
+                <br/><br/>
+                These lines control the border, font and image styles, and should hopefully be fairly self explanatory:
+                	<script type="syntaxhighlighter" class="brush: css"><![CDATA[
+                                border-style: solid;
+                                border-width: 1px;
+                                background-image: url(feedback.png);
+                                background-repeat: no-repeat;
+                                font-family: Arial,Helvetica,sans-serif;
+                                font-size: 10px;
+                                color: #ffffff;
+                        ]]></script>
+                If you wish to modify the widget size, particularly the width, things get a little more tricky -
+                please see <a href="#width-changed">changing the widget size</a>.
+            </blockquote>
+        <b><i>What are the feedback widget properties and how do i change them?</i></b><br/>
+            <blockquote>
+                Feedback widget properties:
+                <br/><br/>
+                <table>
+                    <thead>
+                    <tr>
+                        <td><b>Property</b></td>
+                        <td><b>Description</b></td>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>
+                            duration
+                        </td>
+                        <td>
+                            The length of time of the slide out animation in milliseconds.<br/><i>Default: </i>500
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            easing
+                        </td>
+                        <td>
+                            The easing effect of the animation. Mainly for those using
+                            <a href="http://gsgd.co.uk/sandbox/jquery/easing/">this</a> jQuery plugin.<br/><i>Default: </i>'swing'
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            position
+                        </td>
+                        <td>
+                            Positions the feedback widget on the left or right of the page. Use either 'left' or 'right'.
+                            <br/><i>Default: </i>'left'
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            inWidth
+                        </td>
+                        <td>
+                            The position of the widget when it's not fully displayed. You will need to change this if you
+                            have changed the CSS width value of the feedback widget. <a href="#width-changed">Changing the widget size</a>.<br/><i>Default: </i>'-160px'
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            outWidth
+                        </td>
+                        <td>
+                            The position of the widget when it's fully displayed. You will need to change this if you
+                            have changed the CSS width value of the feedback widget. <a href="#width-changed">Changing the widget size</a>.<br/><i>Default: </i>'-0px'
+                        </td>
+                    </tr>
+                </table>
+                <br/><br/>
+                These all have default values so require no setup unless you want to change them. In the files where you are
+                loading your feedback widget, you can modify any of the values like so,<br/><br/>
+                Replace:
+                        <script type="syntaxhighlighter" class="brush: js"><![CDATA[
+                                   $('#feedback-container').feedback();
+                        ]]></script>
+                with:
+                	<script type="syntaxhighlighter" class="brush: js"><![CDATA[
+                                           $('#feedback-container').feedback({
+                                               position: 'right',
+                                               duration: 100
+                                               //... and so on for any of the other properties
+                                               //note the last property should not have a comma
+                                           });
+                        ]]></script>
+            </blockquote>
+        <b><i>How can i change the size of the feedback widget?</i></b><br/>
+            <blockquote id="width-changed">
+                In the <span class="filename">feedback_widget.css</span> CSS file, the #feedback id contains the
+                width and height of the feedback widget:
+                	<script type="syntaxhighlighter" class="brush: css"><![CDATA[
+                            #feedback{
+                                background-color: #454545;
+                                width: 180px;
+                                height: 100px;
+                                padding: 0px;
+                        ]]></script>
+                You shouldn't have any problems changing the height, but changing the width will affect the sliding
+                animation (see below). <br/><br/>
+                If you do change the width you also need to change the position, so on these lines:
+                	<script type="syntaxhighlighter" class="brush: css"><![CDATA[
+                            .feedback-left{
+                                top: 40%;
+                                left: -160px;
+                                background-position: right;
+                            }
+
+                            .feedback-right{
+                                top: 40%;
+                                right: -160px;
+                            }
+                        ]]></script>
+                modify the 'left:' and 'right:' properties. Note although the feedback widget's width is 180, the position
+                is set to only -160 so that there is the initial overlap displaying the 'feedback' tab section. So if you change
+                the width to 200 the position left/right should be -180.
+                <br/><br/>
+                When you change the width the animation will break. To fix this when you're loading the feedback widget in
+                your HTML header you will need override the default inWidth and outWidth properties. In the following
+                example code assume I've changed the feedback widget's width to 280 (see how when the feedback widget
+                is 'collapsed' there is the 20px overlap):
+                 	<script type="syntaxhighlighter" class="brush: js"><![CDATA[
+                           $('#feedback-container').feedback({
+                               inWidth: '-260px',
+                               outWidth: '-0px'
+                           });
+                        ]]></script>
+            </blockquote>
+        <b><i>What are the config values and where do i change them?</i></b><br/>
+            <blockquote id="config-vars">
+                The config values are stored in <span class="filename">includes/config.php</span>.
+                <br/><br/>
+                <table>
+                    <thead>
+                    <tr>
+                        <td><b>Property</b></td>
+                        <td><b>Description</b></td>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td>
+                            mailTo
+                        </td>
+                        <td>
+                            List of emails to send feedback to. Separate each email with commas,
+                            e.g. 'bob@bob.com,john@bob.com'. <b>This value needs to be changed
+                                when you setup feedback.</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            mailFrom
+                        </td>
+                        <td>
+                            The email address to recipients will see that sent the email. Ideally should
+                            match domain name to reduce likelihood of spam classification. <b>This value needs to be changed
+                                when you setup feedback.</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            mailSubject
+                        </td>
+                        <td>
+                            The subject of the email.
+                            <br/><i>Default: </i>'New feedback on your website'
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            mailGreeting
+                        </td>
+                        <td>
+                            The initial line(s) of text in the email. You can use '@feedback@'
+                            (no quotes) which will get replaced with the type of feedback.
+                            <br/><i>Default: </i>''Hi, some new feedback has been sent from your website. The feedback falls in to the following category: @feedback@. The feedback is as follows:\n\n'
+                        </td>
+                    </tr>
+                </table>
+            </blockquote>
+        <b><i>How do I add an additional form fields?</i></b><br/>
+            <blockquote>
+                <h3>Example 1 - Adding a location drop down</h3>
+                Let's say that as well as optionally collecting the user's name and email address, you want to
+                optionally let them specify their location. Easy! Firstly in <span class="filename">includes/templates/comment.php</span>,
+                <span class="filename">includes/templates/suggestion.php</span> or <span class="filename">includes/templates/bug.php</span>,
+                you need to add some HTML. These are the template files for each feedback submission type and hold all the form
+                HTML. <br/><br/>
+                Find:
+                	<script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                            <strong>Your email address:</strong><br/>
+                            By providing your email address, we can get in contact with you to discuss your suggestions, if necessary.
+                            <input name="email" class="text_entry" value="<?php print $_POST['email']; ?>" />
+                        ]]></script>
+                And add after it:
+                	<script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                            <strong>Your location:</strong>
+                            <select name="location" class="text_entry">
+                              <option value="UK">United Kingdom</option>
+                              <option value="USA">United States of America</option>
+                              <option value="other">Other</option>
+                            </select>
+                        ]]></script>
+                You can add as many locations as you like of course. <br/><br/>
+                Now you need to edit <span class="filename">feedback.php</span>. Look for these lines:
+                	<script type="syntaxhighlighter" class="brush: php"><![CDATA[
+                            if ($feedbackType == 'suggestion'){
+                                $suggestionText = strip_tags($_POST['suggestionText'],ENT_QUOTES);
+                                $name = strip_tags($_POST['name'],ENT_QUOTES);
+                                $email = strip_tags($_POST['email'],ENT_QUOTES);
+                        ]]></script>
+                and after them add:
+                	<script type="syntaxhighlighter" class="brush: php"><![CDATA[
+                                $location = strip_tags($_POST['location'],ENT_QUOTES);
+                        ]]></script>
+                The above line takes the posted data from the 'location' select box we just created
+                in HTML. It's best practice to use 'strip_tags' function on all user posted data, even from
+                select boxes to prevent HTML injection and other nasties. <br/><br/>
+                As we're going to leave it as optional text, there is no strict requirement to validate
+                it, so all you need to do now is find:
+                	<script type="syntaxhighlighter" class="brush: php"><![CDATA[
+                            $body = $mailer->bodyGenerator(array(
+                                'feedbackType' => 'suggestion',
+                                'details' => array(
+                                    'Suggestion' => $suggestionText,
+                                    'User Name' => $name,
+                                    'User Email' => $email,
+                                    'User Agent' => $_SERVER['HTTP_USER_AGENT'],
+                                    'User IP' => $_SERVER['REMOTE_ADDR'],
+                                    'Referer' => $_SESSION['referer']
+                                )
+                            ));
+                        ]]></script>
+                and modify it to look like this (added line 8):
+                	<script type="syntaxhighlighter" class="brush: php"><![CDATA[
+                            $mailer = new basicMailer();
+                            $body = $mailer->bodyGenerator(array(
+                                'feedbackType' => 'suggestion',
+                                'details' => array(
+                                    'Suggestion' => $suggestionText,
+                                    'User Name' => $name,
+                                    'User Email' => $email,
+                                    'User Location'  => $location,
+                                    'User Agent' => $_SERVER['HTTP_USER_AGENT'],
+                                    'User IP' => $_SERVER['REMOTE_ADDR'],
+                                    'Referer' => $_SESSION['referer']
+                                )
+                            ));
+                        ]]></script>
+                <h3>Example 2 - Adding a feedback score</h3>
+                Now let's say you want to add a additional field to the comment form, allowing your website
+                visitors to score your website from 1 (bad) to 10 (great) and then get this additional
+                feedback in your feedback emails.
+                <br/><br/>
+                Firstly edit <span class="filename">includes/templates/comment.php</span>. This file is
+                mostly HTML so should be fairly easy to edit. Below this code:
+                	<script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                            <textarea name="commentText" class="text_entry" cols="20" rows="3"><?php print $_POST['commentText']; ?></textarea>
+                            <br/>
+                        ]]></script>
+                Add these lines:
+                	<script type="syntaxhighlighter" class="brush: html"><![CDATA[
+                            Please score our website from 1 (bad) to 10 (great):
+                            <input name="score" class="text_entry" style="width:20px" value="<?php print $_POST['score']; ?>"/>
+                            <br/>
+                        ]]></script>
+                A couple of things to note here. Firstly we set the value attribute of the input
+                using PHP. This means if the form hasn't
+                been submitted the value will be blank, however if the form has been submitted, and say,
+                there are some validation errors, the value the user entered will remain after
+                the page reload. Also I am overwriting the width value of the '.textentry' class which
+                is normally '100%', the reason for this is that only a 1 or 2 digit number needs to be entered
+                so there is no need to have the input that wide.
+                <br/><br/>
+                Now in <span class="filename">feedback.php</span> looks for these lines:
+                 	<script type="syntaxhighlighter" class="brush: php"><![CDATA[
+                            if ($feedbackType == 'comment'){
+                                $commentText = strip_tags($_POST['commentText'],ENT_QUOTES);
+                                $name = strip_tags($_POST['name'],ENT_QUOTES);
+                                $email = strip_tags($_POST['email'],ENT_QUOTES);
+                                $captchaAnswer = strip_tags($_POST['captchaAnswer'], ENT_QUOTES);
+                        ]]></script>
+                Add this line after line 2:
+                  	<script type="syntaxhighlighter" class="brush: php"><![CDATA[
+                                $score = strip_tags($_POST['score'],ENT_QUOTES);
+                        ]]></script>
+                Next you should validate the user input, say we want to ensure the user
+                has entered a value before sending an email, we also need to check that
+                value is between '1' and '10'.
+                <br/><br/>
+                So after:
+                  	<script type="syntaxhighlighter" class="brush: php"><![CDATA[
+                            //make sure comment has been entered
+                            if (!isset($commentText) || validation::isEmpty($commentText)){
+                                $errors[] = 'You need to enter a comment!';
+                            }
+                        ]]></script>
+                add:
+                  	<script type="syntaxhighlighter" class="brush: php"><![CDATA[
+                            //make sure score is entered and between 1 - 10
+                            if (!isset($score) || validation::isEmpty($score)){
+                                $errors[] = 'You need to score our website!';
+                            } elseif($score < 1 || $score > 10){
+                                $errors[] = 'You need to score our website between 1 (bad) and 10 (great)!';
+                            }
+                        ]]></script>
+                Basically this make sure a score value has been posted and it's not an empty post, then
+                it checks to see if the score value is less than 1 or greater than 10. If either of the
+                statements are true, the '$errors' array gets an additional element with the error
+                message.
+                <br/><br/>
+                Finally you need to do add the '$score' variable to the list of elements that get passed,
+                 via the details array, to you in an email. Where you see this:
+                         <script type="syntaxhighlighter" class="brush: php"><![CDATA[
+                            $body = $mailer->bodyGenerator(array(
+                                'feedbackType' => 'comment',
+                                'details' => array(
+                                    'Comment' => $commentText,
+                                    'User Name' => $name,
+                                    'User Email' => $email,
+                                    'User Agent' => $_SERVER['HTTP_USER_AGENT'],
+                                    'User IP' => $_SERVER['REMOTE_ADDR'],
+                                    'Referer' => $_SESSION['referer']
+                                )
+                            ));
+                        ]]></script>
+                add this on a new line, after line 6:
+                         <script type="syntaxhighlighter" class="brush: php"><![CDATA[
+                            'Website Score' => $score,
+                        ]]></script>
+                Now all your feedback emails should have the user's website score value.
+                <br/>
+            </blockquote>
+        <h1 id="summary">Summary</h1>
+        Hopefully these examples have given you an idea of how you can modify feedback.
+        <br/>
+        However - feel free to contact me if you need additional help.
+        <!--feedback div-->
+        <div id="feedback-container">
+            <a href="../feedback.php"><div id="feedback" class="feedback-right"></div></a>
+        </div>
+
+    </body>
+</html>

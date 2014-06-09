@@ -1,0 +1,65 @@
+div.sdmenu {
+	width: 210px;
+	padding-bottom: 10px;
+	background: url(bottom.gif) no-repeat  right bottom;
+	color: #fff;
+	float:left;
+	margin-left:10px;
+	
+	
+}
+div.sdmenu div {
+	background: url(title.gif) repeat-x;
+	overflow: hidden;
+}
+div.sdmenu div:first-child {
+	background: url(toptitle.gif) no-repeat;
+}
+div.sdmenu div.collapsed {
+	height: 37px;
+}
+div.sdmenu div span {
+	display: block;
+	padding: 0px 15px;
+	font-weight: bold;
+	color:#333;
+	background: url(expanded.png) no-repeat 0px center;
+	cursor: pointer;
+	border-bottom: 1px solid #ddd;
+	line-height:35px;
+	font-size:14px;
+	
+}
+div.sdmenu div.collapsed span {
+	background-image: url(collapsed.png);
+}
+div.sdmenu div a {
+	padding: 8px 10px;
+	display: block;
+	font-size:13px;
+	color:#000000;
+	text-decoration:none;
+	
+	
+	
+}
+div.sdmenu div a.current {
+	
+	color:#000000;
+	text-decoration:none;
+	
+}
+div.sdmenu div a:hover {
+	
+	color:#AD1818;	
+	text-decoration: none;
+	font-size:13px;
+	
+}
+
+
+
+
+
+
+

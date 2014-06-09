@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+.request-propsal a{display:none;}
+.request-propsal:hover a{display:block;}
+.inner-content{
+    border:1px solid #cfcfce;
+	width:675px !important;
+}
+header{position:relative; z-index:2000}
+#banner{ position:relative; z-index:100;}
+.layer1{position:relative; z-index:2;}
+.layer2{position:relative; z-index:200;}
+.layer3{ z-index:6000 !important;}
+
+#slider1 {z-index:1 !important;}
+body{max-width:1280px;}
+.shade{left:0;}
+
+.articles2 article h2{ line-height:20px !important;}
+.developments article{ width:199px!important;}
+.align-center {margin:0 auto !important;}
+body{width:100%; max-width:2500px; margin:0 auto;}

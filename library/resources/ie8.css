@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+.request-propsal a{display:none;}
+.request-propsal:hover a{display:block;}
+
+.inner-content{
+    border:1px solid #cfcfce;
+	width:675px !important;
+}
+.developments article{ width:199px!important;}

@@ -1,0 +1,5 @@
+﻿.btn, input[type=text], input[type=password], textarea, select, .select, .options li, .footer-block input[type=text], .footer-block input[type=submit], .sb-block-top, .sb-block, .block-gray, ul.block-tabs li, .photo-avatar img, .messages_list_div, .tab-color th:first-child div, .tab-color th:last-child div, .impression-box, .connect-block{
+    position: relative;
+    behavior: url(js/PIE.htc);
+}
+.btn{overflow:visible;}

@@ -1,0 +1,11 @@
+==============[ DATE_BUILD = 13.12.2012 ]=============
+
+
+TSN_YII_ENGINE =  v01
+YII =  v1.1.12
+INCLUDE_MODULES = admin, pages, blog
+COMPONENTS = POPUP_FUNCY
+ext = Yii-debug-toolbar, meintenancemode, recaptcha, imperavi-redactor
+
+
+======================================================

@@ -1,0 +1,12 @@
+assets/
+!assets/empty.txt
+protected/runtime/*
+!protected/runtime/empty.txt
+.idea/
+uploads/*
+!uploads/empty.txt
+sitemap*
+webstat/
+protected/views/email_template/
+avatar/
+!avatar/empty.txt

@@ -1,0 +1,234 @@
+/*
+	styles for select
+*/
+.lineSel{/*max-width: 500px;*/}
+
+.cusel,
+.cuselFrameRight,
+.jScrollPaneDrag,
+.jScrollArrowUp,
+.jScrollArrowDown {
+	background: url(../images/selects-2.png) no-repeat;
+}
+.block-filter .cusel,
+.block-filter .cuselFrameRight,
+.block-filter .jScrollPaneDrag,
+.block-filter .jScrollArrowUp,
+.block-filter .jScrollArrowDown {
+	background: url(../images/selects-3.png) no-repeat;
+}
+.cusel, .block-filter .cusel { /* общий вид селекта включая стрелку справа */
+	height: 37px;
+	background-position: left top;
+	/*display: inline-block;*/
+	position: relative;
+	cursor: pointer;
+	font-size: 12px;
+	z-index: 1;
+	width: 100% !important;
+	outline: none;
+}
+.cuselFrameRight, .block-filter .cuselFrameRight { /* левая чсть селект. обыно скругление и левая граница */
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	right: -3px;
+	height: 100%;
+	width: 32px;
+	background-position: right top;
+}
+
+.cuselText { /* контейнер для отображенного текста селект */
+	height: 17px;
+	padding: 10px 12px; /* подбираем отступы и высоту для видимого текста в селекте */
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	font-size: 15px; 
+	line-height: 17px;
+	color: #aaa; 
+	font-family:'ProximaNovaBold', Arial, Helvetica, sans-serif;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.block-filter .cuselText { /* контейнер для отображенного текста селект */
+	font-size: 14px; 
+	color: #4b5560; 
+	font-family:'ProximaNovaSemibold', Arial, Helvetica, sans-serif;
+}
+* html .cuselText { /* высота блока для текста для ие6 */
+	height: 17px;
+}
+.cusel span { /* оформление оптиона */
+	display: block;
+	cursor: pointer;
+	white-space: nowrap;
+	padding: 2px 10px; /* паддинг справа - это отступ текста от ползунка */
+	zoom: 1;
+}
+.block-filter .cusel span { /* оформление оптиона */
+	padding: 3px 12px 3px 34px; /* паддинг справа - это отступ текста от ползунка */
+	font-size: 12px;
+	color: #fff;
+	font-family:'ProximaNovaSemibold', Arial, Helvetica, sans-serif;
+	position: relative;
+}
+.block-filter .cusel .item-filter { /* оформление оптиона */
+	padding: 3px 12px; /* паддинг справа - это отступ текста от ползунка */
+}
+.cusel span:hover,
+.cusel .cuselOptHover { /* реакция оптиона на наведение */
+	background: #e3e6e7;
+	color: #383F48;
+}
+
+.cusel .cuselActive { /* оформление активного оптиона в списке */
+	background: #aaa;
+	color: #fff;
+	cursor: default;
+}
+.block-filter .cusel span:hover,
+.block-filter .cusel .cuselOptHover,
+.block-filter .cusel .cuselActive { /* оформление активного оптиона в списке */
+	background: #fff;
+	color: #32bcde;
+}
+
+.block-filter .cusel span span{ /* оформление оптиона */
+	display: block;
+	position: absolute;
+	left: 12px;
+	top: 4px;
+	padding: 0;
+	width: 17px;
+	height: 17px;
+}
+.block-filter .cusel .item-filter-1{background: url(../images/bg-item-filter-1.png) no-repeat;}
+.block-filter .cusel .item-filter-2{background: url(../images/bg-item-filter-2.png) no-repeat;}
+.block-filter .cusel .item-filter-3{background: url(../images/bg-item-filter-3.png) no-repeat;}
+.block-filter .cusel .item-filter-4{background: url(../images/bg-item-filter-4.png) no-repeat;}
+.block-filter .cusel .item-filter-5{background: url(../images/bg-item-filter-5.png) no-repeat;}
+.block-filter .cusel .item-filter-6{background: url(../images/bg-item-filter-6.png) no-repeat;}
+.block-filter .cusel .item-filter-7{background: url(../images/bg-item-filter-7.png) no-repeat;}
+
+.block-filter .cusel span:hover span,
+.block-filter .cusel .cuselOptHover span,
+.block-filter .cusel .cuselActive span{ /* оформление активного оптиона в списке */
+	background-color: #fff;
+	background-position: 0 -17px;
+}
+
+
+/*
+	styles for focus and hover
+*/
+/*.cusel:hover,
+.cusel:hover .cuselFrameRight,
+.cusel:focus,
+.cusel:focus .cuselFrameRight,
+.cuselFocus,
+.cuselFocus .cuselFrameRight {
+	background-image: url(../images/selects-focus.png);
+}*/
+
+.cuselOpen {
+	z-index: 999;
+}
+
+/*
+	styles for disabled select
+*/
+.classDisCusel,
+.classDisCusel .cuselFrameRight {
+	background-image: url(../images/selects-2-dis.png) !important;
+	cursor: default;
+	color: #ccc;
+}
+.classDisCusel .cuselText {
+	cursor: default;
+}
+
+
+/*
+	styles for scrollbar
+*/
+.cusel .cusel-scroll-wrap { /* контейнер для блока с прокруткой */
+	display: block;
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background: #fff; /* фон выпадающего списка */
+	min-width: 100%;
+	width: 100%;
+}
+.block-filter .cusel .cusel-scroll-wrap { /* контейнер для блока с прокруткой */
+	background: #142b37; /* фон выпадающего списка */
+	border-radius: 0 0 3px 3px; 
+	-webkit-border-radius: 0 0 3px 3px; 
+	-moz-border-radius: 0 0 3px 3px; 
+	-o-border-radius: 0 0 3px 3px;
+}
+.cusel .jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 5;
+	border: 1px solid #e3e6e7; /* границы выпадающего спиcка */
+}
+.block-filter .cusel .jScrollPaneContainer {
+	border: none; /* границы выпадающего спиcка */
+	padding: 5px 0;
+}
+.cusel .jScrollPaneTrack { /* трек для ползунка прокрутки */
+	height: 100%;
+	width: 7px !important;
+	background: #ccc;
+	position: absolute;
+	top: 0;
+	right: 4px;
+}
+.cusel .jScrollPaneDrag, .block-filter .cusel .jScrollPaneDrag { /* ползунок */
+	position: absolute;
+	background-position: -40px -37px;
+	cursor: pointer;
+	width: 15px !important;
+	height: 27px !important;
+	right: -4px;
+	
+}
+
+.cusel .jScrollPaneDragTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.cusel .jScrollPaneDragBottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+.cusel .jScrollArrowUp, .block-filter .cusel .jScrollArrowUp { /* стрелка вверх */
+	position: absolute;
+	top: 0;
+	right: 2px;
+	width: 26px;
+	height: 12px;
+	cursor: pointer;
+	background-position: -2px -37px;
+	overflow: hidden;
+}
+.cusel .jScrollArrowDown, .block-filter .cusel .jScrollArrowDown { /* стрелка вниз */
+	width: 25px;
+	height: 12px;
+	position: absolute;
+	top: auto;
+	bottom: 0;
+	right: 3px;
+	cursor: pointer;
+	background-position: -21px -37px;
+	overflow: hidden;
+}
